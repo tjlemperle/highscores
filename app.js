@@ -20,7 +20,7 @@ var highScores =[
                 }
                 highScores.push({name: nameInput, score: scoreInput});
                 
-                highScores.sort(function(a, b){return b.score + a.score});
+                highScores.sort(function(a, b){return a.score - b.score});
 
                 console.log(highScores);
 

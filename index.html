@@ -4,16 +4,23 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <title> High Scores </title>
+        <big>The Awesome Scoreboard</big>
     </head>
+    
     <body>
         <div class = "pageBackground">
             
                 <div class="navbar">
-                    <a href=#>Asteroids</a>
-                    <a href=#>Breakout</a>
-                    <a href=#>Joust</a>
-                    <a href=#>Qix</a>
-                    <a href=#>Space Invaders</a>
+                    <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                        
+                        <Option value="index.html">Select a game...</Option>
+                        <Option value="Asteroids">Asteroids</Option>
+                        <Option value="Breakout">Breakout</Option>
+                        <Option value="Joust">Joust</Option>
+                        <Option value="Qix">Qix</Option>
+                        <Option value"Space Invaders">Space Invaders</Option>
+
+                    </select>
                 </div>
                 
                 <div>
@@ -24,23 +31,16 @@
                     <button onclick="myFunction()" class="submitBtn">Submit </button>
         
                 </div>
-
                
-
-
                 <table id="highScoresTable">
-                    
-                
+                                   
                     <tr>
                         <th>Rank #</th>
                         <th>Name</th>
                         <th>Score</th>
                     </tr>
-                                                
-
-                
+                                                               
                 </table>
-
 
         </div>
 
