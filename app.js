@@ -16,17 +16,20 @@ var highScores =[
                 var nameInput = document.getElementById("nameInput").value
                 var scoreInput = document.getElementById("scoreInput").value
                 if(!Number(scoreInput)){
-                    alert("WRONG");
-                }
+                    alert("Please enter a valid score and try again");
+                }else{
+
                 highScores.push({name: nameInput, score: scoreInput});
                 
                 highScores.sort(function(a, b){return a.score - b.score});
 
                 console.log(highScores);
 
-                
+                var i;
 
                 highScores.forEach(function(score, i) {
+
+                ++i;
 
                 var table = document.getElementById("highScoresTable");
                 var row = table.insertRow(0);
@@ -38,8 +41,17 @@ var highScores =[
                 cell3.innerHTML = score.score;
 
                 })
-               
-                
-                
+                }
+                 
+                               
+        }
+
+      
+
+        function clearText() {
+
+            document.getElementById("nameInput").value ="";
+            document.getElementById("scoreInput").value ="";
+
         }
         

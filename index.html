@@ -5,46 +5,109 @@
         <link rel="stylesheet" href="style.css">
         <title> High Scores </title>
         <big>The Awesome Scoreboard</big>
+
+        <script src="./app.js"></script>
+
     </head>
     
     <body>
+        
         <div class = "pageBackground">
             
-                <div class="navbar">
+                <div class="selectGame">
                     <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
                         
                         <Option value="index.html">Select a game...</Option>
-                        <Option value="Asteroids">Asteroids</Option>
-                        <Option value="Breakout">Breakout</Option>
-                        <Option value="Joust">Joust</Option>
-                        <Option value="Qix">Qix</Option>
+                        <Option value="asteroids.html">Asteroids</Option>
+                        <Option value="breakout.html">Breakout</Option>
+                        <Option value="joust.html">Joust</Option>
+                        <Option value="qix.html">Qix</Option>
                         <Option value"Space Invaders">Space Invaders</Option>
 
                     </select>
                 </div>
                 
                 <div>
+
                     <input class="textbox" type="text" id="nameInput" placeholder="Enter name...">
 
                     <input class="textbox" type="text" id="scoreInput" placeholder="Enter score...">
 
                     <button onclick="myFunction()" class="submitBtn">Submit </button>
+
+                    <button onclick="clearText()" class="clearBtn">Clear</button>
         
                 </div>
                
+                <table id="tableHeader">
+                    <thead>
+                        <tr>
+                            <th width="10%">Rank #</th>
+                            <th width="45%">Name</th>
+                            <th width="45%">Score</th>
+                        </tr>
+                    </thead>
+
+                </table>
+
                 <table id="highScoresTable">
-                                   
-                    <tr>
-                        <th>Rank #</th>
-                        <th>Name</th>
-                        <th>Score</th>
-                    </tr>
-                                                               
+                        <tr>
+                            <td width="10%">1</td>
+                            <td width="45%"></td>   
+                            <td width="45%"></td>                            
+                        </tr>          
+                        <tr>
+                            <td width="10%">2</td>
+                            <td width="45%"></td>   
+                            <td width="45%"></td>                            
+                        </tr>                    
+                        <tr>
+                            <td width="10%">3</td>
+                            <td width="45%"></td>   
+                            <td width="45%"></td>                            
+                        </tr>                    
+                        <tr>
+                            <td width="10%">4</td>
+                            <td width="45%"></td>   
+                            <td width="45%"></td>                            
+                        </tr>                    
+                        <tr>
+                            <td width="10%">5</td>
+                            <td width="45%"></td>   
+                            <td width="45%"></td>                            
+                        </tr>                    
+                        <tr>
+                            <td width="10%">6</td>
+                            <td width="45%"></td>   
+                            <td width="45%"></td>                            
+                        </tr>                    
+                        <tr>
+                            <td width="10%">7</td>
+                            <td width="45%"></td>   
+                            <td width="45%"></td>                            
+                        </tr>                    
+                        <tr>
+                            <td width="10%">8</td>
+                            <td width="45%"></td>   
+                            <td width="45%"></td>                            
+                        </tr>                    
+                        <tr>
+                            <td width="10%">9</td>
+                            <td width="45%"></td>   
+                            <td width="45%"></td>                            
+                        </tr>                    
+                        <tr>
+                            <td width="10%">10</td>
+                            <td width="45%"></td>   
+                            <td width="45%"></td>                            
+                        </tr>                    
+                                                                                    
                 </table>
 
         </div>
 
-<script src="./app.js"></script>
+
+
 
     </body>
 
